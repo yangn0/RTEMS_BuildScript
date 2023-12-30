@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "~/btstack/**",
+                "${workspaceFolder}/rtems/6/**",
+                "${workspaceFolder}/src/rtems/**",
+                "${workspaceFolder}/src/rtems/bsps/**",
+                "${workspaceFolder}/src/rtems-source-builder/**",
+                "${workspaceFolder}/src/rtems-libbsd/**",
+            ],
+            "defines": [],
+            "compilerPath": "/home/yangn0/devel/rtems-aarch64/rtems/6/bin/aarch64-rtems6-gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
