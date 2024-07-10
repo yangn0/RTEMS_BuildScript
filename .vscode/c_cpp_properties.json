@@ -11,10 +11,10 @@
                 "${workspaceFolder}/src/rtems/bsps/aarch64/raspberrypi/**"
             ],
             "defines": [],
-            "compilerPath": "/home/yangn0/RTEMS_devel/rtems/6/bin/aarch64-rtems6-gcc",
+            "compilerPath": "~/RTEMS_devel/rtems/6/bin/aarch64-rtems6-gcc",
             "cStandard": "c17",
             "cppStandard": "gnu++17",
-            "intelliSenseMode": "linux-gcc-x64"
+            "intelliSenseMode": "macos-gcc-arm64"
         }
     ],
     "version": 4
