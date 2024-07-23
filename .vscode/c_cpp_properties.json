@@ -7,8 +7,9 @@
                 "${workspaceFolder}/src/rtems/**",
                 "${workspaceFolder}/src/rtems/bsps/**",
                 "${workspaceFolder}/src/rtems-source-builder/**",
+                "${workspaceFolder}/src/rtems/bsps/**",
+                "${workspaceFolder}/src/rtems-source-builder/**",
                 "${workspaceFolder}/src/rtems-libbsd/**",
-                "${workspaceFolder}/src/rtems/bsps/aarch64/raspberrypi/**"
             ],
             "defines": [],
             "compilerPath": "~/RTEMS_devel/rtems/6/bin/aarch64-rtems6-gcc",
