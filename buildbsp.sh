@@ -4,7 +4,7 @@ export rtems_src=rtems
 
 cd ~/RTEMS_devel/src/$rtems_src
 ./waf distclean
-./waf configure --prefix=$HOME/RTEMS_devel/rtems/6
+./waf configure --prefix=$HOME/RTEMS_devel/rtems/6 --rtems-config=$HOME/RTEMS_devel/config.ini
 ./waf
 ./waf install
 
