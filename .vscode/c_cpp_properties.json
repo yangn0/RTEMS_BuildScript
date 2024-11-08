@@ -13,9 +13,9 @@
             ],
             "defines": [],
             "compilerPath": "~/RTEMS_devel/rtems/6/bin/aarch64-rtems6-gcc",
-            "cStandard": "c17",
+            "cStandard": "c99",
             "cppStandard": "gnu++17",
-            "intelliSenseMode": "macos-gcc-arm64"
+            "intelliSenseMode": "linux-gcc-arm64"
         }
     ],
     "version": 4
