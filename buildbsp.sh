@@ -5,11 +5,11 @@ export arch=aarch64
 # export bsp=xilinx_versal_qemu
 export bsp=raspberrypi4b
 
-cd ~/RTEMS_devel/src/rtems/bsps/aarch64/raspberrypi/fdt
-dtc -I dts -O dtb ./bcm2711-rpi-4-b.dts -o bcm2711-rpi-4-b.dtb
-rtems-bin2c bcm2711-rpi-4-b.dtb rpi4b_dtb.c
-rm rpi4b_dtb.h
-rm bcm2711-rpi-4-b.dtb
+# cd ~/RTEMS_devel/src/rtems/bsps/aarch64/raspberrypi/fdt
+# dtc -I dts -O dtb ./bcm2711-rpi-4-b.dts -o bcm2711-rpi-4-b.dtb
+# rtems-bin2c bcm2711-rpi-4-b.dtb rpi4b_dtb.c
+# rm rpi4b_dtb.h
+# rm bcm2711-rpi-4-b.dtb
 
 cd ~/RTEMS_devel/src/rtems
 # ./waf uninstall
