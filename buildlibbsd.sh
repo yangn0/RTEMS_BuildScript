@@ -11,13 +11,15 @@ export bsp=xilinx_zynq_a9_qemu
 #xilinx_zynqmp_lp64_qemu
 
 export buildset=everything
+export test_name=ipsec01
+# export test_name=crypto01
 
 cd ~/RTEMS_devel/src/rtems-libbsd
 # ./waf uninstall
 # ./waf distclean
 ./waf configure --prefix=$HOME/RTEMS_devel/rtems/6 \
       --rtems-bsps=$arch/$bsp \
-      --buildset=buildset/$buildset.ini \
+      --buildset=buildset/$buildset.ini
       # --enable-auto-regen
 ./waf
 ./waf install
@@ -27,12 +29,12 @@ if [ "$bsp" = xilinx_zynq_a9_qemu ]; then
 # sudo ip tuntap add qtap mode tap user $(whoami)
 # sudo ip link set dev qtap up
 # sudo ip addr add 169.254.1.1/16 dev qtap
-
-qemu-system-arm -serial null -serial mon:stdio -nographic \
+# -S -s
+qemu-system-arm  -S -s -serial null -serial mon:stdio -nographic \
   -M xilinx-zynq-a9 -m 256M \
   -net nic,model=cadence_gem \
   -net tap,ifname=qtap,script=no,downscript=no \
-  -kernel build/arm-rtems6-xilinx_zynq_a9_qemu-$buildset/media01.exe
+  -kernel build/arm-rtems6-xilinx_zynq_a9_qemu-$buildset/$test_name.exe
 fi
 
 if [ "$bsp" = raspberrypi4b ]; then

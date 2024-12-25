@@ -8,24 +8,19 @@
             "name": "(gdb) 启动",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/home/yangn0/devel/rtems-aarch64/app/btstack_rtems/app.exe",
+            "program": "/home/yangn0/RTEMS_devel/src/rtems-libbsd/build/arm-rtems6-xilinx_zynq_a9_qemu-everything/ipsec01.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
-            "miDebuggerServerAddress": "192.168.123.32:3333",
+            "miDebuggerServerAddress": "127.0.0.1:1234",
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "/home/yangn0/devel/rtems-aarch64/tools/rtems/6/bin/aarch64-rtems6-gdb",
+            "miDebuggerPath": "/home/yangn0/RTEMS_devel/rtems/6/bin/arm-rtems6-gdb",
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",
                     "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "将反汇编风格设置为 Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
                     "ignoreFailures": true
                 }
             ]
