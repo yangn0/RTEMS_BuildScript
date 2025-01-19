@@ -1,5 +1,6 @@
 #!/bin/bash
-export PATH=$HOME/RTEMS_devel/rtems/6/bin:$PATH
+export rtems_version=6
+export PATH=$HOME/RTEMS_devel/rtems/$rtems_version/bin:$PATH
 
 export arch=aarch64
 # export bsp=xilinx_versal_qemu
@@ -13,8 +14,8 @@ export bsp=raspberrypi4b
 
 cd ~/RTEMS_devel/src/rtems
 # ./waf uninstall
-# ./waf distclean
-./waf configure --prefix=$HOME/RTEMS_devel/rtems/6 --rtems-config=$HOME/RTEMS_devel/config.ini
+./waf distclean
+./waf configure --prefix=$HOME/RTEMS_devel/rtems/$rtems_version --rtems-config=$HOME/RTEMS_devel/config.ini
 ./waf
 ./waf install
 
